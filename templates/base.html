@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>LDD</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/bootstrap/css/bootstrap.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/Hero-Clean-Reverse-images.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/Navbar-With-Button-icons.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md bg-body py-3">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="{{ url_for('home') }}"><span>Home</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navcol-1">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item"><a class="nav-link active" href="{{ url_for('ai_detect_page') }}">Detect</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('supplement') }}">Supplement</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"></a></li>
+            </ul>
+            <button class="btn btn-primary" type="button">
+              <a href="/response" style="text-decoration: none; color: white;">ChatBot</a>
+            </button>
+        </div>
+    </div>
+</nav>
+  {% block content %}
+  
+  
+  
+  {% endblock  %}
+
+  <script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/bootstrap/js/bootstrap.min.js') }}"></script>
+<script>
+  document.getElementById("toggleNavbarButton").addEventListener("click", function() {
+      // When the button is clicked, toggle the visibility of the Bootstrap navbar
+      $("#navcol-1").toggleClass("show");
+  });
+</script>
+</body>
+
+</html>
