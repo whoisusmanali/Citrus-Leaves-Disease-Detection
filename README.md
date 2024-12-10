@@ -1,8 +1,5 @@
 # Citrus Leaves Disease Detection
 
-```markdown
-# Citrus Leaves Disease Classification
-
 This project aims to classify various diseases affecting citrus leaves using **Convolutional Neural Networks (CNN)** and **transfer learning techniques**. A web application has also been developed using the **Flask framework**, with an intuitive front-end built using HTML, CSS, and JavaScript.  
 
 ---
@@ -115,8 +112,8 @@ Follow these steps to set up and run the project locally:
 
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/your-username/citrus-disease-classification.git
-   cd citrus-disease-classification
+   git clone https://github.com/whoisusmanali/Citrus-Leaves-Disease-Detection.git
+   cd Citrus-Leaves-Disease-Detection
    ```
 
 2. Install required dependencies:  
@@ -149,18 +146,3 @@ Follow these steps to set up and run the project locally:
 - **Dataset Expansion**: Incorporate more disease categories and diverse data.  
 - **Mobile Integration**: Develop a mobile application for easy field usage.  
 - **Deployment**: Deploy the app on a cloud platform for global accessibility.  
-
----
-
-## Contributing
-
-Contributions are welcome! Please fork the repository and submit a pull request with your changes.
-
----
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
-```  
-
-Let me know if you need any modifications!
